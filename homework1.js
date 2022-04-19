@@ -49,11 +49,15 @@ function halfReverse(str){
 
 }
 
-// console.log(reverseArray1("word"));
-// console.log(reverseLoop1("hello"));
 
-// console.log(reverseLoop2("hello"));
 
-// console.log(recursiveReverse("hello"));
-console.log(halfReverse("word"));
+console.log(reverseArray1("hello"));
+
+console.log(reverseLoop1("hello"));
+
+console.log(reverseLoop2("hello"));
+
+console.log(recursiveReverse("hello"));
+
+console.log(halfReverse("hello"));
 
