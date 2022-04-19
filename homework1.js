@@ -35,9 +35,25 @@ function recursiveReverse(str){
     return recursiveReverse(str.substr(1,)) + str.charAt(0);
 }
 
+function halfReverse(str){
+    let wordLen = str.length;
+    let arr = str.split("");
+
+    let halfLen =     Math.floor(wordLen/2);
+    for (let i =0;i <halfLen; i++){
+        let temp = arr[i];
+        arr[i] = arr[wordLen-1-i];
+        arr[wordLen-1-i]= temp;
+    }
+    return arr.join("");
+
+}
+
 // console.log(reverseArray1("word"));
 // console.log(reverseLoop1("hello"));
 
 // console.log(reverseLoop2("hello"));
 
-console.log(recursiveReverse("hello"));
+// console.log(recursiveReverse("hello"));
+console.log(halfReverse("word"));
+
