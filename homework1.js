@@ -7,4 +7,4 @@ function reverseArray1(str){
 }
 
 
-console.log(reverseArray1("hue"));
+console.log(reverseArray1("word"));
