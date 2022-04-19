@@ -15,6 +15,29 @@ function reverseLoop1(str){
     return newStr;
 }
 
-console.log(reverseArray1("word"));
-console.log(reverseLoop1("hello"));
+function reverseLoop2(str){
+    let newStr = "";
+    let wordLen = str.length;
 
+    let counter = 0;
+    while(counter < wordLen){
+        newStr += str[wordLen-1-counter]
+        counter++;
+    }
+    return newStr;
+}
+
+
+function recursiveReverse(str){
+    if (str===""){
+        return str;
+    }
+    return recursiveReverse(str.substr(1,)) + str.charAt(0);
+}
+
+// console.log(reverseArray1("word"));
+// console.log(reverseLoop1("hello"));
+
+// console.log(reverseLoop2("hello"));
+
+console.log(recursiveReverse("hello"));
